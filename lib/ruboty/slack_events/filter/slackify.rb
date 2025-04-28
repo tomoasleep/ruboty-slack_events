@@ -19,7 +19,7 @@ module Ruboty
 
         # @rbs text: String
         def replace_user_mentions(text) #: String
-          text.gsub(/@(?<user_name>\w+)/) do |user_mention|
+          text.to_s.gsub(/@(?<user_name>\w+)/) do |user_mention|
             user_name = Regexp.last_match[:user_name]
             user_info = resolvers.user_resolver.user_info_by_name(user_name)
             next user_mention unless user_info
