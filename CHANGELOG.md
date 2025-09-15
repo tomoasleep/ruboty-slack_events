@@ -1,4 +1,7 @@
 ## Unreleased
+
+- Ensure that message body is string on SlackEvents#say (https://github.com/tomoasleep/ruboty-slack_events/pull/4)
+
 ## 0.3.1 - 2025-04-07
 
 - Let UserResolver#user_info_by_id return nil on user_not_found error (https://github.com/tomoasleep/ruboty-slack_events/pull/2)
