@@ -1,4 +1,5 @@
 ## Unreleased
+## 0.3.2 - 2025-09-16
 
 - Ensure that message body is string on SlackEvents#say (https://github.com/tomoasleep/ruboty-slack_events/pull/4)
 
