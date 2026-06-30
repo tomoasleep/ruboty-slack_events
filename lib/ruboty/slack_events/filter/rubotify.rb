@@ -40,7 +40,7 @@ module Ruboty
 
         # @rbs text: String
         def replace_link(text) #: String
-          text.gsub(/<(?<url>[^\>|]+)(?:\|(?<text>[^\>]+))?>/) do |link|
+          text.gsub(/<(?<url>[^>|]+)(?:\|(?<text>[^>]+))?>/) do |link|
             url = Regexp.last_match[:url]
             text = Regexp.last_match[:text]
 
