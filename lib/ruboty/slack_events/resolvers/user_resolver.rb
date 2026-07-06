@@ -47,7 +47,7 @@ module Ruboty
           ensure_users
 
           @user_caches.find do |_, user|
-            user.name == user_name
+            user&.name == user_name
           end&.last
         end
 
