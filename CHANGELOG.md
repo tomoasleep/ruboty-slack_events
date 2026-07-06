@@ -1,4 +1,9 @@
 ## Unreleased
+## 0.3.3 - 2026-07-06
+
+- Fix NoMethodError in user_info_by_name when cache holds nil entry (https://github.com/tomoasleep/ruboty-slack_events/pull/6)
+- Fix redundant regexp escape in rubotify filter (https://github.com/tomoasleep/ruboty-slack_events/pull/7)
+
 ## 0.3.2 - 2025-09-16
 
 - Ensure that message body is string on SlackEvents#say (https://github.com/tomoasleep/ruboty-slack_events/pull/4)
